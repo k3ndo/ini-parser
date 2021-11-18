@@ -1,0 +1,860 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IniDataParser
+   | ini-parser </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IniDataParser
+   | ini-parser ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="IniParser.Parser.IniDataParser">
+  
+  
+  <h1 id="IniParser_Parser_IniDataParser" data-uid="IniParser.Parser.IniDataParser" class="text-break">Class IniDataParser
+  </h1>
+  <div class="markdown level0 summary"><p>Responsible for parsing an string from an ini file, and creating
+an <a class="xref" href="IniParser.Model.IniData.html">IniData</a> structure.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">IniDataParser</span></div>
+      <div class="level2"><a class="xref" href="IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser.html">ConcatenateDuplicatedKeysIniDataParser</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="IniParser.Parser.html">IniParser.Parser</a></h6>
+  <h6><strong>Assembly</strong>: INIFileParser.dll</h6>
+  <h5 id="IniParser_Parser_IniDataParser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class IniDataParser</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser__ctor.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L28">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser__ctor_" data-uid="IniParser.Parser.IniDataParser.#ctor*"></a>
+  <h4 id="IniParser_Parser_IniDataParser__ctor" data-uid="IniParser.Parser.IniDataParser.#ctor">IniDataParser()</h4>
+  <div class="markdown level1 summary"><p>Ctor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IniDataParser()</code></pre>
+  </div>
+  <h5 id="IniParser_Parser_IniDataParser__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The parser uses a <a class="xref" href="IniParser.Model.Configuration.IniParserConfiguration.html">IniParserConfiguration</a> by default</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser__ctor_IniParser_Model_Configuration_IniParserConfiguration_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.%23ctor(IniParser.Model.Configuration.IniParserConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L38">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser__ctor_" data-uid="IniParser.Parser.IniDataParser.#ctor*"></a>
+  <h4 id="IniParser_Parser_IniDataParser__ctor_IniParser_Model_Configuration_IniParserConfiguration_" data-uid="IniParser.Parser.IniDataParser.#ctor(IniParser.Model.Configuration.IniParserConfiguration)">IniDataParser(IniParserConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Ctor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IniDataParser(IniParserConfiguration parserConfiguration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.Configuration.IniParserConfiguration.html">IniParserConfiguration</a></td>
+        <td><span class="parametername">parserConfiguration</span></td>
+        <td><p>Parser's <a class="xref" href="IniParser.Model.Configuration.IniParserConfiguration.html">IniParserConfiguration</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_Configuration.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.Configuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L55">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_Configuration_" data-uid="IniParser.Parser.IniDataParser.Configuration*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_Configuration" data-uid="IniParser.Parser.IniDataParser.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Configuration that defines the behaviour and constraints
+that the parser must follow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IniParserConfiguration Configuration { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.Configuration.IniParserConfiguration.html">IniParserConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_Errors.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.Errors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L71">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_Errors_" data-uid="IniParser.Parser.IniDataParser.Errors*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_Errors" data-uid="IniParser.Parser.IniDataParser.Errors">Errors</h4>
+  <div class="markdown level1 summary"><p>Returns the list of errors found while parsing the ini file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;Exception&gt; Errors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1">ReadOnlyCollection</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="IniParser_Parser_IniDataParser_Errors_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the configuration option ThrowExceptionOnError is false it can contain one element
+for each problem found while parsing; otherwise it will only contain the very same
+exception that was raised.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_HasError.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.HasError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L60">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_HasError_" data-uid="IniParser.Parser.IniDataParser.HasError*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_HasError" data-uid="IniParser.Parser.IniDataParser.HasError">HasError</h4>
+  <div class="markdown level1 summary"><p>True is the parsing operation encounter any problem</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasError { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_ExtractComment_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.ExtractComment(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L233">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_ExtractComment_" data-uid="IniParser.Parser.IniDataParser.ExtractComment*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_ExtractComment_System_String_" data-uid="IniParser.Parser.IniDataParser.ExtractComment(System.String)">ExtractComment(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a comment from a string if exist, and returns the string without
+the comment substring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string ExtractComment(string line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>The string we want to remove the comments from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The string s without comments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_ExtractKey_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.ExtractKey(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L379">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_ExtractKey_" data-uid="IniParser.Parser.IniDataParser.ExtractKey*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_ExtractKey_System_String_" data-uid="IniParser.Parser.IniDataParser.ExtractKey(System.String)">ExtractKey(String)</h4>
+  <div class="markdown level1 summary"><p>Extracts the key portion of a string containing a key/value pair..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string ExtractKey(string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>The string to be processed, which contains a key/value pair</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The name of the extracted key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_ExtractValue_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.ExtractValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L395">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_ExtractValue_" data-uid="IniParser.Parser.IniDataParser.ExtractValue*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_ExtractValue_System_String_" data-uid="IniParser.Parser.IniDataParser.ExtractValue(System.String)">ExtractValue(String)</h4>
+  <div class="markdown level1 summary"><p>Extracts the value portion of a string containing a key/value pair..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string ExtractValue(string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>The string to be processed, which contains a key/value pair</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The name of the extracted value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_HandleDuplicatedKeyInCollection_System_String_System_String_IniParser_Model_KeyDataCollection_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.HandleDuplicatedKeyInCollection(System.String%2CSystem.String%2CIniParser.Model.KeyDataCollection%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L405">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_HandleDuplicatedKeyInCollection_" data-uid="IniParser.Parser.IniDataParser.HandleDuplicatedKeyInCollection*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_HandleDuplicatedKeyInCollection_System_String_System_String_IniParser_Model_KeyDataCollection_System_String_" data-uid="IniParser.Parser.IniDataParser.HandleDuplicatedKeyInCollection(System.String,System.String,IniParser.Model.KeyDataCollection,System.String)">HandleDuplicatedKeyInCollection(String, String, KeyDataCollection, String)</h4>
+  <div class="markdown level1 summary"><p>Abstract Method that decides what to do in case we are trying to add a duplicated key to a section</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HandleDuplicatedKeyInCollection(string key, string value, KeyDataCollection keyDataCollection, string sectionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.KeyDataCollection.html">KeyDataCollection</a></td>
+        <td><span class="parametername">keyDataCollection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sectionName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_LineContainsAComment_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.LineContainsAComment(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L188">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_LineContainsAComment_" data-uid="IniParser.Parser.IniDataParser.LineContainsAComment*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_LineContainsAComment_System_String_" data-uid="IniParser.Parser.IniDataParser.LineContainsAComment(System.String)">LineContainsAComment(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a given string contains a comment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool LineContainsAComment(string line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>String with a line to be checked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if any substring from s is a comment, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_LineMatchesAKeyValuePair_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.LineMatchesAKeyValuePair(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L218">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_LineMatchesAKeyValuePair_" data-uid="IniParser.Parser.IniDataParser.LineMatchesAKeyValuePair*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_LineMatchesAKeyValuePair_System_String_" data-uid="IniParser.Parser.IniDataParser.LineMatchesAKeyValuePair(System.String)">LineMatchesAKeyValuePair(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a given string represents a key / value pair.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool LineMatchesAKeyValuePair(string line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>The string to be checked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if the string represents a key / value pair, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_LineMatchesASection_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.LineMatchesASection(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L203">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_LineMatchesASection_" data-uid="IniParser.Parser.IniDataParser.LineMatchesASection*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_LineMatchesASection_System_String_" data-uid="IniParser.Parser.IniDataParser.LineMatchesASection(System.String)">LineMatchesASection(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a given string represents a section delimiter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool LineMatchesASection(string line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>The string to be checked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if the string represents a section, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_Parse_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L89">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_Parse_" data-uid="IniParser.Parser.IniDataParser.Parse*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_Parse_System_String_" data-uid="IniParser.Parser.IniDataParser.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Parses a string containing valid ini data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IniData Parse(string iniDataString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">iniDataString</span></td>
+        <td><p>String with data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.IniData.html">IniData</a></td>
+        <td><p>An <a class="xref" href="IniParser.Model.IniData.html">IniData</a> instance with the data contained in
+the <code data-dev-comment-type="paramref" class="paramref">iniDataString</code> correctly parsed an structured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="IniParser.Exceptions.ParsingException.html">ParsingException</a></td>
+        <td><p>Thrown if the data could not be parsed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_ProcessKeyValuePair_System_String_IniParser_Model_IniData_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.ProcessKeyValuePair(System.String%2CIniParser.Model.IniData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L343">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_ProcessKeyValuePair_" data-uid="IniParser.Parser.IniDataParser.ProcessKeyValuePair*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_ProcessKeyValuePair_System_String_IniParser_Model_IniData_" data-uid="IniParser.Parser.IniDataParser.ProcessKeyValuePair(System.String,IniParser.Model.IniData)">ProcessKeyValuePair(String, IniData)</h4>
+  <div class="markdown level1 summary"><p>Processes a string containing an ini key/value pair.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessKeyValuePair(string line, IniData currentIniData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>The string to be processed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.IniData.html">IniData</a></td>
+        <td><span class="parametername">currentIniData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_ProcessLine_System_String_IniParser_Model_IniData_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.ProcessLine(System.String%2CIniParser.Model.IniData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L247">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_ProcessLine_" data-uid="IniParser.Parser.IniDataParser.ProcessLine*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_ProcessLine_System_String_IniParser_Model_IniData_" data-uid="IniParser.Parser.IniDataParser.ProcessLine(System.String,IniParser.Model.IniData)">ProcessLine(String, IniData)</h4>
+  <div class="markdown level1 summary"><p>Processes one line and parses the data found in that line
+(section or key/value pair who may or may not have comments)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessLine(string currentLine, IniData currentIniData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">currentLine</span></td>
+        <td><p>The string with the line to process</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.IniData.html">IniData</a></td>
+        <td><span class="parametername">currentIniData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser_ProcessSection_System_String_IniParser_Model_IniData_.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser.ProcessSection(System.String%2CIniParser.Model.IniData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L299">View Source</a>
+  </span>
+  <a id="IniParser_Parser_IniDataParser_ProcessSection_" data-uid="IniParser.Parser.IniDataParser.ProcessSection*"></a>
+  <h4 id="IniParser_Parser_IniDataParser_ProcessSection_System_String_IniParser_Model_IniData_" data-uid="IniParser.Parser.IniDataParser.ProcessSection(System.String,IniParser.Model.IniData)">ProcessSection(String, IniData)</h4>
+  <div class="markdown level1 summary"><p>Proccess a string which contains an ini section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessSection(string line, IniData currentIniData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>The string to be processed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.IniData.html">IniData</a></td>
+        <td><span class="parametername">currentIniData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Parser_IniDataParser.md&amp;value=---%0Auid%3A%20IniParser.Parser.IniDataParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Parser/IniDataParser.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

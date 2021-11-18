@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SectionData
+   | ini-parser </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SectionData
+   | ini-parser ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="IniParser.Model.SectionData">
+  
+  
+  <h1 id="IniParser_Model_SectionData" data-uid="IniParser.Model.SectionData" class="text-break">Class SectionData
+  </h1>
+  <div class="markdown level0 summary"><p>Information associated to a section in a INI File
+Includes both the value and the comments associated to the key.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SectionData</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="IniParser.Model.html">IniParser.Model</a></h6>
+  <h6><strong>Assembly</strong>: INIFileParser.dll</h6>
+  <h5 id="IniParser_Model_SectionData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SectionData : ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData__ctor_IniParser_Model_SectionData_System_Collections_Generic_IEqualityComparer_System_String__.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.%23ctor(IniParser.Model.SectionData%2CSystem.Collections.Generic.IEqualityComparer%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L50">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData__ctor_" data-uid="IniParser.Model.SectionData.#ctor*"></a>
+  <h4 id="IniParser_Model_SectionData__ctor_IniParser_Model_SectionData_System_Collections_Generic_IEqualityComparer_System_String__" data-uid="IniParser.Model.SectionData.#ctor(IniParser.Model.SectionData,System.Collections.Generic.IEqualityComparer{System.String})">SectionData(SectionData, IEqualityComparer&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="IniParser.Model.SectionData.html">SectionData</a> class
+from a previous instance of <a class="xref" href="IniParser.Model.SectionData.html">SectionData</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SectionData(SectionData ori, IEqualityComparer&lt;string&gt; searchComparer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.SectionData.html">SectionData</a></td>
+        <td><span class="parametername">ori</span></td>
+        <td><p>The instance of the <a class="xref" href="IniParser.Model.SectionData.html">SectionData</a> class
+used to create the new instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">searchComparer</span></td>
+        <td><p>Search comparer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="IniParser_Model_SectionData__ctor_IniParser_Model_SectionData_System_Collections_Generic_IEqualityComparer_System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Data is deeply copied</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData__ctor_System_String_.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L15">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData__ctor_" data-uid="IniParser.Model.SectionData.#ctor*"></a>
+  <h4 id="IniParser_Model_SectionData__ctor_System_String_" data-uid="IniParser.Model.SectionData.#ctor(System.String)">SectionData(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SectionData(string sectionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sectionName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData__ctor_System_String_System_Collections_Generic_IEqualityComparer_System_String__.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.%23ctor(System.String%2CSystem.Collections.Generic.IEqualityComparer%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L23">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData__ctor_" data-uid="IniParser.Model.SectionData.#ctor*"></a>
+  <h4 id="IniParser_Model_SectionData__ctor_System_String_System_Collections_Generic_IEqualityComparer_System_String__" data-uid="IniParser.Model.SectionData.#ctor(System.String,System.Collections.Generic.IEqualityComparer{System.String})">SectionData(String, IEqualityComparer&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="IniParser.Model.SectionData.html">SectionData</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SectionData(string sectionName, IEqualityComparer&lt;string&gt; searchComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sectionName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">searchComparer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_Comments.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.Comments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L146">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_Comments_" data-uid="IniParser.Model.SectionData.Comments*"></a>
+  <h4 id="IniParser_Model_SectionData_Comments" data-uid="IniParser.Model.SectionData.Comments">Comments</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the comment list associated to this section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Comments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>A list of strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_Keys.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.Keys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L175">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_Keys_" data-uid="IniParser.Model.SectionData.Keys*"></a>
+  <h4 id="IniParser_Model_SectionData_Keys" data-uid="IniParser.Model.SectionData.Keys">Keys</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the keys associated to this section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyDataCollection Keys { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.KeyDataCollection.html">KeyDataCollection</a></td>
+        <td><p>A collection of KeyData objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_LeadingComments.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.LeadingComments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L126">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_LeadingComments_" data-uid="IniParser.Model.SectionData.LeadingComments*"></a>
+  <h4 id="IniParser_Model_SectionData_LeadingComments" data-uid="IniParser.Model.SectionData.LeadingComments">LeadingComments</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Do not use this property, use property Comments instead&quot;)]
+public List&lt;string&gt; LeadingComments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_SectionName.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.SectionName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L111">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_SectionName_" data-uid="IniParser.Model.SectionData.SectionName*"></a>
+  <h4 id="IniParser_Model_SectionData_SectionName" data-uid="IniParser.Model.SectionData.SectionName">SectionName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SectionName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The name of the section</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_TrailingComments.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.TrailingComments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L156">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_TrailingComments_" data-uid="IniParser.Model.SectionData.TrailingComments*"></a>
+  <h4 id="IniParser_Model_SectionData_TrailingComments" data-uid="IniParser.Model.SectionData.TrailingComments">TrailingComments</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Do not use this property, use property Comments instead&quot;)]
+public List&lt;string&gt; TrailingComments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_ClearComments.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.ClearComments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L66">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_ClearComments_" data-uid="IniParser.Model.SectionData.ClearComments*"></a>
+  <h4 id="IniParser_Model_SectionData_ClearComments" data-uid="IniParser.Model.SectionData.ClearComments">ClearComments()</h4>
+  <div class="markdown level1 summary"><p>Deletes all comments in this section and key/value pairs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearComments()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_ClearKeyData.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.ClearKeyData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L76">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_ClearKeyData_" data-uid="IniParser.Model.SectionData.ClearKeyData*"></a>
+  <h4 id="IniParser_Model_SectionData_ClearKeyData" data-uid="IniParser.Model.SectionData.ClearKeyData">ClearKeyData()</h4>
+  <div class="markdown level1 summary"><p>Deletes all the key-value pairs in this section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearKeyData()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_Clone.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L198">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_Clone_" data-uid="IniParser.Model.SectionData.Clone*"></a>
+  <h4 id="IniParser_Model_SectionData_Clone" data-uid="IniParser.Model.SectionData.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates a new object that is a copy of the current instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A new object that is a copy of this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData_Merge_IniParser_Model_SectionData_.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData.Merge(IniParser.Model.SectionData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L90">View Source</a>
+  </span>
+  <a id="IniParser_Model_SectionData_Merge_" data-uid="IniParser.Model.SectionData.Merge*"></a>
+  <h4 id="IniParser_Model_SectionData_Merge_IniParser_Model_SectionData_" data-uid="IniParser.Model.SectionData.Merge(IniParser.Model.SectionData)">Merge(SectionData)</h4>
+  <div class="markdown level1 summary"><p>Merges otherSection into this, adding new keys if they don't exists
+or overwriting values if the key already exists.
+Comments get appended.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Merge(SectionData toMergeSection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="IniParser.Model.SectionData.html">SectionData</a></td>
+        <td><span class="parametername">toMergeSection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="IniParser_Model_SectionData_Merge_IniParser_Model_SectionData__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Comments are also merged but they are always added, not overwritten.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/rickyah/ini-parser/new/master/apiSpec/new?filename=IniParser_Model_SectionData.md&amp;value=---%0Auid%3A%20IniParser.Model.SectionData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/k3ndo/ini-parser/blob/documentation/src/IniFileParser/Model/SectionData.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
